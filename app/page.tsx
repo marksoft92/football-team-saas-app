@@ -1,19 +1,8 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import { useParams } from 'next/navigation'
+import Image from "next/image";
+import styles from "./page.module.css";
 export default function Home() {
-
-
-  const params = useParams()
- 
-  // Route -> /shop/[tag]/[item]
-  // URL -> /shop/shoes/nike-air-max-97
-  // `params` -> { tag: 'shoes', item: 'nike-air-max-97' }
-  console.log(params)
-
   return (
     <main className={styles.main}>
-      
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
@@ -25,7 +14,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -101,5 +90,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
