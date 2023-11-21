@@ -3,3 +3,17 @@ $primary-color: #64ff00;
 :export {
   primaryColor: $primary-color;
 }
+
+.flex {
+  display: flex;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+.flex-direc-col {
+  flex-direction: column;
+}
+.align-item-end {
+  align-items: flex-end;
+}
