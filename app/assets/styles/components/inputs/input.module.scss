@@ -1,0 +1,15 @@
+.input {
+  padding: 10px;
+  border: none;
+  background-color: transparent !important;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  transition: box-shadow 0.3s;
+
+  &.input:focus {
+    box-shadow: 0 0 10px #19d4ca;
+  }
+  &input {
+    all: unset;
+  }
+}

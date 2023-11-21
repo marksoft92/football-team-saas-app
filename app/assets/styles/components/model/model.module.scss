@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card {
+  width: 300px;
+  background-color: #1e213a;
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 4px solid #19d4ca;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.isOpen {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}

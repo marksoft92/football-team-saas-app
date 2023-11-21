@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientOnly from "./components/ClientOnly";
 import RegisterModal from "./components/modals/RegisterModal";
 import LoginModal from "./components/modals/LoginModal";
+import Navbar from "./components/navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,8 +24,9 @@ export default function RootLayout({
         <ClientOnly>
           <LoginModal />
           <RegisterModal />
+          <Navbar />
         </ClientOnly>
-        {children}
+        <div className="container">{children}</div>
       </body>
     </html>
   );
